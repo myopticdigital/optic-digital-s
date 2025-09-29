@@ -11,7 +11,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="bg-primaryPurple flex items-start justify-between px-7 py-10 text-white">
+    <div className="bg-primaryPurple flex items-start justify-between px-12 py-12 text-white">
       <div className="max-w-sm flex-1 flex flex-col items-start gap-4">
         <img src="/whitelogo.png" className="w-36" alt="" />
         <h5 className="font-neue font-medium text-[24px]">Sign up for our newsletter</h5>
@@ -33,7 +33,7 @@ const Footer = () => {
 
       <div className="max-w-sm flex flex-col gap-4">
         <h5 className="font-neue font-bold text-[20px]">Quick links</h5>
-        <ul className="text-[#E9E9E9] font-normal text-[16px]">
+        <ul className="text-[#E9E9E9] space-y-5 font-normal text-[16px]">
           <li>
             <a href="#">Our services</a>
           </li>

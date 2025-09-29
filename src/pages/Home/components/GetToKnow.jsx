@@ -4,10 +4,10 @@ const GetToKnow = () => {
   return (
     <section className="bg-primaryPurple text-[#E9E9E9] py-10">
       <div className="flex items-center justify-center gap-10">
-        <div className=" overflow-hidden rounded-[40px]">
+        <div className=" overflow-hidden w-[500px] h-[470px] rounded-[40px]">
             <img src="/gettoknowpic.jpg" className="w-[512px] h-[572px]" alt="" />
         </div>
-        <div className="max-w-md flex items-start flex-col gap-3">
+        <div className="max-w-md flex items-start flex-col gap-2">
           <h1 className="font-neue text-white font-bold text-[36px]">
             Get to know Optic Digital
           </h1>
