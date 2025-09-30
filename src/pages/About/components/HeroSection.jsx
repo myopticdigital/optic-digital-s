@@ -8,7 +8,7 @@ const HeroSection = () => {
           About us
         </h4>
 
-        <h1 className="text-center leading-[64px] text-[56px] font-neue font-bold">
+        <h1 className="text-center leading-[64px] text-[34px] md:text-[56px] font-neue font-bold">
           Discover our journey and what drives us
         </h1>
         <p className="text-center">

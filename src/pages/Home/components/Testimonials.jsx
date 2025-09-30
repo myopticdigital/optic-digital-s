@@ -1,24 +1,33 @@
-import React from "react";
+import React, { useRef } from "react";
 import TestimonialCard from "./TestimonialCard";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
+import { Pagination } from "swiper/modules";
+import {Swiper, SwiperSlide } from "swiper/react";
+
+import 'swiper/css';
+import 'swiper/css/pagination'
+
 const Testimonials = () => {
+  const swiperRef = useRef(null);
   const testimonials = [
     {
-        testimony : 'Optic Digital transformed our online presence, significantly boosting bookings. Their strategic approach made them an invaluable partner',
-        userName: 'Wakanov',
-        
+      testimony:
+        "Optic Digital transformed our online presence, significantly boosting bookings. Their strategic approach made them an invaluable partner",
+      userName: "Wakanov",
     },
     {
-        testimony : "Optic Digital played a key role in enhancing our brand's online footprint, increasing sales and engagement. A trusted ally for Drinks.ng",
-        userName : 'Drinks.ng',
-        logo: '/drinks.png'
+      testimony:
+        "Optic Digital played a key role in enhancing our brand's online footprint, increasing sales and engagement. A trusted ally for Drinks.ng",
+      userName: "Drinks.ng",
+      logo: "/drinks.png",
     },
     {
-        testimony : 'Optic Digital exceeded expectations in promoting our consultancy services. Their data-driven strategies positively impacted client acquisition',
-        userName : 'Tritek consulting ltd',
-        logo : '/tritek.png'
-    }
+      testimony:
+        "Optic Digital exceeded expectations in promoting our consultancy services. Their data-driven strategies positively impacted client acquisition",
+      userName: "Tritek consulting ltd",
+      logo: "/tritek.png",
+    },
   ];
   return (
     <div className="bg-primaryPurple py-7 px-7 gap-4 flex flex-col items-center justify-center text-white">
@@ -28,20 +37,41 @@ const Testimonials = () => {
         have to say
       </p>
 
-      <div className="flex items-center gap-4">
-        {
-            testimonials.map((testimony, i) => (
-                <TestimonialCard key={i} testimony={testimony.testimony} logo={testimony.logo} userName={testimony.userName} />
-            ))
-        }
+      <div className="flex items-center gap-4"></div>
+
+      <div className="w-full">
+        <Swiper
+          modules={[Pagination]}
+          slidesPerView={3}
+          breakpoints={{
+            320: { slidesPerView: 1 },
+            640: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+          className="flex items-center justify-center"
+          onBeforeInit={(swiper) => {
+            swiperRef.current = swiper
+          }}
+        >
+          {testimonials.map((testimony, i) => (
+            <SwiperSlide key={i}>
+              <TestimonialCard
+                key={i}
+                testimony={testimony.testimony}
+                logo={testimony.logo}
+                userName={testimony.userName}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
 
       <div className="flex items-center gap-2 text-black">
-        <button className="p-3 rounded-full bg-white">
-            <ChevronLeft />
+        <button className="p-3 rounded-full bg-white" onClick={() => swiperRef.current?.slidePrev()}>
+          <ChevronLeft />
         </button>
-        <button className="p-3 rounded-full bg-white">
-            <ChevronRight />
+        <button className="p-3 rounded-full bg-white" onClick={() => swiperRef.current?.slideNext()}>
+          <ChevronRight />
         </button>
       </div>
     </div>

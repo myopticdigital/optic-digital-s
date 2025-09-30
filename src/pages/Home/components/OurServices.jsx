@@ -83,13 +83,13 @@ const OurServices = () => {
     }
   };
   return (
-    <div className="bg-white py-7 flex items-start gap-16 justify-center">
+    <div className="bg-white py-7 flex flex-wrap items-start gap-16 justify-center">
       <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={headerVariants}
-          className="max-w-80 text-[16px] sticky top-24"
+          className="max-w-80 text-[16px] lg:sticky top-24"
         >
           <motion.h1 
             className="capitalize text-[36px] font-bold mb-4 text-gray-900"
@@ -123,7 +123,7 @@ const OurServices = () => {
         </motion.div>
 
       {/* Services container */}
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
         {
             services.map((service, i) => (
                 <ServiceCard bodyText={service.bodyText} index={i} icon={service.icon} serviceTitle={service.title} key={i} />

@@ -29,7 +29,7 @@ const HeroSection = () => {
     <div className="relative bg-[url('./assets/homeherobg.jpg')] flex flex-col items-center gap-4 justify-center bg-cover bg-no-repeat w-full h-[600px] bg-center">
 
       <motion.div
-        className="flex flex-col items-center gap-4 z-50"
+        className="flex flex-col items-center gap-4 z-10"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -45,7 +45,7 @@ const HeroSection = () => {
       <p >
        
       </p>
-      <motion.div className="flex items-center gap-4 z-50" variants={itemVariants}>
+      <motion.div className="flex items-center gap-4 z-10" variants={itemVariants}>
         <button className="cursor-pointer font-neue bg-primaryPurple px-6 py-3 hover:opacity-75 transition duration-300 text-white rounded-4xl font-medium">
           Book a call
         </button>

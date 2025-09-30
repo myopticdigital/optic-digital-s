@@ -33,7 +33,7 @@ const WhyChoose = () => {
         <h3 className='capitalize font-neue font-bold text-[36px]'>Why Choose Optic Digital</h3>
         <p className='text-center max-w-2xl'>Every brand has its own story, and we craft strategies designed to highlight what makes yours unique while driving real, measurable results</p>
 
-        <div className='grid grid-cols-4 gap-4'>
+        <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4'>
             {
                 reasons.map((reason, i) => (
                     <ReasonCard key={i} icon={reason.icon} title={reason.title} bodyText={reason.bodyText} />

@@ -1,17 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from './ui/Header'
 import { Outlet } from 'react-router'
 import Footer from './ui/Footer'
+import MobileMenu from './ui/MobileMenu'
 
 const Layout = ({ children }) => {
+  const [showNav, setShowNav] = useState(false)
   return (
-    <div>
-      <Header />
+    <>
+      <Header setShowNav={setShowNav} />
       <main>
         <Outlet />
       </main>
       <Footer />
-    </div>
+      <MobileMenu isOpen={showNav} setIsOpen={setShowNav} />
+    </>
   )
 }
 

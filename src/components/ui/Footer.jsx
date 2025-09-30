@@ -11,15 +11,15 @@ import {
 
 const Footer = () => {
   return (
-    <div className="bg-primaryPurple flex items-start justify-between px-12 py-12 text-white">
-      <div className="max-w-sm flex-1 flex flex-col items-start gap-4">
+    <div className="bg-primaryPurple grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3  place-items-start place-content-between px-12 py-12 text-white">
+      <div className="ld:max-w-sm max-w-72 flex-1 flex flex-col items-start gap-4">
         <img src="/whitelogo.png" className="w-36" alt="" />
         <h5 className="font-neue font-medium text-[24px]">Sign up for our newsletter</h5>
         <p className="text-[16px] leading-[24px] font-normal">
           Stay updated with the latest marketing trends and news all delivered
           straight to your inbox
         </p>
-        <div className="flex items-center gap-2 ">
+        <div className="flex flex-col md:flex-row items-center gap-2 ">
           <div className="flex items-center px-4 py-3.5 border rounded-2xl cursor-pointer gap-2">
             <Email />
             <input type="email" placeholder="Email address" className="flex-1 placeholder:text-white focus:outline-0" />

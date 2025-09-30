@@ -23,7 +23,7 @@ const Workers = () => {
     <div className='flex items-center py-7 px-4 justify-center flex-col gap-3'>
         <h1 className='font-neue font-bold text-center text-[36px]'>Our service</h1>
         <p className='leading-[24px] text-center max-w-xl'>Our team brings together expertise in strategy, design, and marketing to deliver solutions that move brands forward with precision and impact</p>
-        <div className='flex items-center gap-7'>
+        <div className='flex flex-col md:flex-row items-center gap-7'>
             {
                 staffs.map((staff, i) => (
                     <div key={i}>
