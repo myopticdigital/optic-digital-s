@@ -7,7 +7,7 @@ const GetToKnow = () => {
         <div className=" overflow-hidden md:w-[500px] hidden md:block md:h-[470px] rounded-[40px]">
             <img src="/gettoknowpic.jpg" className="w-[512px] h-[572px]" alt="" />
         </div>
-        <div className="max-w-md flex items-start flex-col gap-2">
+        <div className="max-w-md flex items-start flex-col px-5 gap-2">
           <h1 className="font-neue text-white font-bold text-[36px]">
             Get to know Optic Digital
           </h1>

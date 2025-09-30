@@ -4,7 +4,7 @@ import React from "react";
 const HeroSection = () => {
   return (
     <div className="bg-[url('ab.png')] relative bg-cover bg-blend-lighten bg-no-repeat items-center  text-white flex flex-col justify-center h-[30rem]">
-      <div className="flex flex-col z-50 gap-4 items-center justify-center max-w-2xl">
+      <div className="flex flex-col z-10 gap-4 items-center justify-center max-w-2xl">
         <h4 className="bg-[#5206C066] p-2 rounded-full text-[20px] text-center">
           Our blog
         </h4>

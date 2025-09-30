@@ -34,7 +34,7 @@ const HeroSection = () => {
         initial="hidden"
         animate="visible"
       >
-      <motion.h1 className="font-neue font-bold text-white text-center max-w-3xl text-[56px] z-50" variants={itemVariants}>
+      <motion.h1 className="font-neue font-bold text-white text-center max-w-3xl text-[34px] md:text-[56px] z-50" variants={itemVariants}>
         We Grow Brands That People Can’t Ignore
       </motion.h1>
       

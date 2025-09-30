@@ -7,7 +7,7 @@ const Header = ({ setShowNav }) => {
   const pathName = loction.pathname
 
   return (
-    <div className='flex items-center justify-between md:px-[95px] px-10 py-[15px] bg-white'>
+    <div className='flex items-center justify-between md:px-[95px] sticky top-0 z-20 px-10 py-[15px] bg-white'>
       <a href="/"><img src="src/assets/logo.svg" alt="logo" /></a>
 
       <nav className='md:flex items-center hidden gap-7'>
