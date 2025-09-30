@@ -10,6 +10,7 @@ import {
   SearchIcon,
 } from "../../../assets/svgs/svg";
 import ServiceCard from "../../../components/ui/ServiceCard";
+import { motion } from "framer-motion";
 
 const OurServices = () => {
   const services = [
@@ -69,23 +70,63 @@ const OurServices = () => {
         "Build and manage modern, user-friendly websites and apps that deliver seamless performance, enhance customer experience, and support business growth.",
     },
   ];
+
+  const headerVariants = {
+    hidden: { opacity: 0, x: -30 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut"
+      }
+    }
+  };
   return (
     <div className="bg-white py-7 flex items-start gap-16 justify-center">
-      <div className="max-w-80 text-[16px] sticky top-0 ">
-        <h1 className="capitalize text-[36px] font-neue font-bold">
-          Our services
-        </h1>
-        <p className="leading-6">
-          We bring together strategy, storytelling, and design to deliver
-          marketing that works. Our services include
-        </p>
-      </div>
+      <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={headerVariants}
+          className="max-w-80 text-[16px] sticky top-24"
+        >
+          <motion.h1 
+            className="capitalize text-[36px] font-bold mb-4 text-gray-900"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            Our Services
+          </motion.h1>
+          
+          <motion.p 
+            className="leading-6 text-gray-600"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            We bring together strategy, storytelling, and design to deliver
+            marketing that works. Our services include
+          </motion.p>
+
+          
+          <motion.div
+            initial={{ width: 0 }}
+            whileInView={{ width: 60 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mt-6"
+          />
+        </motion.div>
 
       {/* Services container */}
       <div className="grid grid-cols-2 gap-4">
         {
             services.map((service, i) => (
-                <ServiceCard bodyText={service.bodyText} icon={service.icon} serviceTitle={service.title} key={i} />
+                <ServiceCard bodyText={service.bodyText} index={i} icon={service.icon} serviceTitle={service.title} key={i} />
             ))
         }
       </div>

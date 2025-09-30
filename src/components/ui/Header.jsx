@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <div className='flex items-center justify-between px-[95px] py-[15px] bg-white'>
-      <img src="src/assets/logo.svg" alt="logo" />
+      <a href="/"><img src="src/assets/logo.svg" alt="logo" /></a>
 
       <nav className='flex items-center gap-7'>
         <a href="/aboutus" className={`text-[16px] ${ pathName === '/aboutus' ? 'text-primaryPurple' : 'text-black' }`}>About us</a>
@@ -18,7 +18,7 @@ const Header = () => {
         <a href="#" className={`text-[16px] ${ pathName === '/contact' ? 'text-primaryPurple' : 'text-black' }`}>Contact us</a>
       </nav>
 
-      <button className='cursor-pointer font-neue bg-primaryPurple px-6 py-3 text-white rounded-4xl font-medium'>
+      <button className='cursor-pointer hover:opacity-75 transition-all duration-300 font-neue bg-primaryPurple px-6 py-3 text-white rounded-4xl font-medium'>
         Book a call
       </button>
     </div>

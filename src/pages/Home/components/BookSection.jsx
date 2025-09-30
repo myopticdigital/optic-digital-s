@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 
@@ -13,17 +14,82 @@ const BookSection = () => {
           your brand further
         </p>
 
-        <button className="cursor-pointer font-neue bg-primaryPurple px-6 py-3 text-white rounded-4xl font-medium">
+        <button className="cursor-pointer hover:opacity-75 transition duration-200 font-neue bg-primaryPurple px-6 py-3 text-white rounded-4xl font-medium">
           Book a call
         </button>
       </div>
 
       <div className="relative flex items-center justify-center">
-        <img src="/main.png" className="w-36 absolute -left-2 top-28 z-10" alt="" />
-        <div className="h-[30rem] overflow-hidden z-20">
-            <img src="/officer.png" className="h-[35rem] z-20" /> 
-        </div>
-        <div className="absolute bottom-0 bg-white h-80 rounded-tr-[3rem] rounded-bl-[3rem] w-80"></div>
+       
+        <motion.img
+          src="/main.png"
+          className="w-36 absolute -left-2 top-28 z-10"
+          alt=""
+          initial={{ opacity: 0, x: -50, rotate: -10 }}
+          whileInView={{ opacity: 1, x: 0, rotate: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.8,
+            delay: 0.3,
+            ease: [0.34, 1.56, 0.64, 1],
+          }}
+          animate={{
+            y: [0, -15, 0],
+          }}
+          whileHover={{ scale: 1.1, rotate: 5 }}
+          style={{
+            animation: "float 3s ease-in-out infinite",
+          }}
+        />
+
+        {/* Main officer image with slide up */}
+        <motion.div
+          className="h-[30rem] overflow-hidden z-20"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.8,
+            ease: [0.25, 0.46, 0.45, 0.94],
+          }}
+        >
+          <motion.img
+            src="/officer.png"
+            className="h-[35rem] z-20"
+            initial={{ scale: 1.1 }}
+            whileInView={{ scale: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 1,
+              ease: "easeOut",
+            }}
+          />
+        </motion.div>
+
+        
+        <motion.div
+          className="absolute bottom-0 bg-white h-80 rounded-tr-[3rem] rounded-bl-[3rem] w-80"
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.7,
+            delay: 0.2,
+            ease: [0.34, 1.56, 0.64, 1],
+          }}
+        />
+
+        <style jsx>{`
+          @keyframes float {
+            0%,
+            100% {
+              transform: translateY(0px);
+            }
+            50% {
+              transform: translateY(-15px);
+            }
+          }
+        `}</style>
       </div>
     </div>
   );
