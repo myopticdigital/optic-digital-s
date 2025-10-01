@@ -3,10 +3,10 @@ import TestimonialCard from "./TestimonialCard";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import { Pagination } from "swiper/modules";
-import {Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import 'swiper/css';
-import 'swiper/css/pagination'
+import "swiper/css";
+import "swiper/css/pagination";
 
 const Testimonials = () => {
   const swiperRef = useRef(null);
@@ -37,24 +37,23 @@ const Testimonials = () => {
         have to say
       </p>
 
-      <div className="flex items-center gap-4"></div>
-
-      <div className="w-full">
+      <div className="w-full flex items-center justify-center">
         <Swiper
           modules={[Pagination]}
           slidesPerView={3}
+          spaceBetween={20}
           breakpoints={{
-            320: { slidesPerView: 1 },
-            640: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
+            320: { slidesPerView: 1, spaceBetween: 10 },
+            640: { slidesPerView: 2, spaceBetween: 25 },
+            1024: { slidesPerView: 3, spaceBetween: 20 },
           }}
-          className="flex items-center justify-center"
+          className="flex items-center"
           onBeforeInit={(swiper) => {
-            swiperRef.current = swiper
+            swiperRef.current = swiper;
           }}
         >
           {testimonials.map((testimony, i) => (
-            <SwiperSlide key={i}>
+            <SwiperSlide key={i} className="!w-auto px-3">
               <TestimonialCard
                 key={i}
                 testimony={testimony.testimony}
@@ -67,10 +66,16 @@ const Testimonials = () => {
       </div>
 
       <div className="flex items-center gap-2 text-black">
-        <button className="p-3 rounded-full bg-white" onClick={() => swiperRef.current?.slidePrev()}>
+        <button
+          className="p-3 rounded-full bg-white"
+          onClick={() => swiperRef.current?.slidePrev()}
+        >
           <ChevronLeft />
         </button>
-        <button className="p-3 rounded-full bg-white" onClick={() => swiperRef.current?.slideNext()}>
+        <button
+          className="p-3 rounded-full bg-white"
+          onClick={() => swiperRef.current?.slideNext()}
+        >
           <ChevronRight />
         </button>
       </div>

@@ -44,7 +44,7 @@ const BookSection = () => {
 
         {/* Main officer image with slide up */}
         <motion.div
-          className="h-[30rem] overflow-hidden z-20"
+          className="h-[30rem] overflow-hidden z-10"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

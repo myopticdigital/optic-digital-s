@@ -15,7 +15,7 @@ const Header = ({ setShowNav }) => {
         <a href="#" className={`text-[16px] ${ pathName === '/services' ? 'text-primaryPurple' : 'text-black' }`}>Our Services</a>
         <a href="blogs" className={`text-[16px] ${ pathName.includes('blogs') ? 'text-primaryPurple' : 'text-black' }`}>Blog</a>
         <a href="#" className={`text-[16px] ${ pathName === '/careers' ? 'text-primaryPurple' : 'text-black' }`}>Careers</a>
-        <a href="#" className={`text-[16px] ${ pathName === '/contact' ? 'text-primaryPurple' : 'text-black' }`}>Contact us</a>
+        <a href="contact" className={`text-[16px] ${ pathName === '/contact' ? 'text-primaryPurple' : 'text-black' }`}>Contact us</a>
       </nav>
 
     <div className='flex items-center gap-3'>
@@ -24,7 +24,7 @@ const Header = ({ setShowNav }) => {
         Book a call
       </button>
 
-      <div onClick={() => setShowNav(true)}>
+      <div className='md:hidden'  onClick={() => setShowNav(true)}>
         <AlignCenter />
       </div>
     </div>
