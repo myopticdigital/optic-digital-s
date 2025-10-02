@@ -41,11 +41,11 @@ const Testimonials = () => {
         <Swiper
           modules={[Pagination]}
           slidesPerView={3}
-          spaceBetween={20}
+          spaceBetween={10}
           breakpoints={{
             320: { slidesPerView: 1, spaceBetween: 10 },
-            640: { slidesPerView: 2, spaceBetween: 25 },
-            1024: { slidesPerView: 3, spaceBetween: 20 },
+            640: { slidesPerView: 2, spaceBetween: 15 },
+            1024: { slidesPerView: 3, spaceBetween: 10 },
           }}
           className="flex items-center"
           onBeforeInit={(swiper) => {
@@ -53,7 +53,7 @@ const Testimonials = () => {
           }}
         >
           {testimonials.map((testimony, i) => (
-            <SwiperSlide key={i} className="!w-auto px-3">
+            <SwiperSlide key={i} className="!w-auto px-1">
               <TestimonialCard
                 key={i}
                 testimony={testimony.testimony}

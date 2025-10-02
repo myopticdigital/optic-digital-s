@@ -2,7 +2,7 @@ import React from "react";
 
 const Form = () => {
   return (
-    <form className="flex-1 flex items-start flex-col bg-white text-black">
+    <form className="flex-1 flex items-start py-7 gap-4  flex-col bg-white text-black">
       <div className="flex items-center gap-10 w-full">
         <div className=" flex-col flex items-start">
           <label htmlFor="fname" className="text-sm text-[#717171]">

@@ -5,7 +5,7 @@ const GetToKnow = () => {
     <section className="bg-primaryPurple text-[#E9E9E9] py-10">
       <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
         <div className=" overflow-hidden md:w-[500px] hidden md:block md:h-[470px] rounded-[40px]">
-            <img src="/gettoknowpic.jpg" className="w-[512px] h-[572px]" alt="" />
+            <img src="/gettoknowpic.jpg" className="w-[700px] h-[600px]" alt="" />
         </div>
         <div className="max-w-md flex items-start flex-col px-5 gap-2">
           <h1 className="font-neue text-white font-bold text-[36px]">
