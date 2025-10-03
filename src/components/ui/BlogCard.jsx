@@ -1,20 +1,26 @@
-import React from 'react'
+import React from "react";
 
-const BlogCard = () => {
+const BlogCard = ({ image, title, author, authorImage, date, id }) => {
   return (
-    <div className='flex flex-col items-start gap-3 p-3 border max-w-[397px] max-h-[444px] overflow-hidden rounded-2xl border-[#DADADA]'>
-        <img src="/blogi.jpg" className='rounded-xl' alt="" />
-        <h3 className='font-semibold text-[24px] leading-[28px] max-w-[340px]'>5 Proven Marketing Strategies to Boost Brand Awareness in 2025</h3>
-        <div className='flex items-center w-full justify-between'>
-            <div className='flex items-center gap-2'>
-                <img src="/worker1.jpg" className='w-10 h-10 rounded-full' alt="" />
-                <p className='font-medium text-[16px]'>Abraham Segun</p>
-            </div>
+    <a href={`/blogs/${id}`} className="flex flex-col items-start gap-3 p-3 border max-w-[397px] max-h-[444px] overflow-hidden rounded-2xl border-[#DADADA]">
+      
+      <img src={image} className="rounded-xl w-full h-48 object-cover" alt={title} />
 
-            <p className='text-[#969696]'>October 1, 2025</p>
+      
+      <h3 className="font-semibold text-[24px] leading-[28px] max-w-[340px] line-clamp-2">
+        {title}
+      </h3>
+
+      
+      <div className="flex items-center w-full justify-between">
+        <div className="flex items-center gap-2">
+          <img src={authorImage} className="w-10 h-10 rounded-full object-cover" alt={author} />
+          <p className="font-medium text-[16px]">{author}</p>
         </div>
-    </div>
-  )
-}
+        <p className="text-[#969696]">{date}</p>
+      </div>
+    </a>
+  );
+};
 
-export default BlogCard
+export default BlogCard;

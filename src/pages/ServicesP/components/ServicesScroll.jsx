@@ -219,7 +219,7 @@ const ServicesScroll = () => {
                 </motion.p>
 
                 <button className={`cursor-pointer hover:opacity-75 transition-all duration-300 font-neue ${sectionColors.bg} px-6 py-3 text-white rounded-4xl font-medium`}>
-                  Contact us
+                  <a href="/contact">Contact us</a>
                 </button>
               </div>
             </motion.div>

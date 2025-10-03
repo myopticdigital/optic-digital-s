@@ -50,7 +50,7 @@ const HeroSection = () => {
           Book a call
         </button>
         <button className="cursor-pointer font-neue border hover:bg-secondaryColor/80 transition duration-300 border-secondaryColor px-6 py-3 text-white rounded-4xl font-medium">
-          <a href="#">Explore our services</a>
+          <a href="/services">Explore our services</a>
         </button>
       </motion.div>
 

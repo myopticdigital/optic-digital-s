@@ -1,20 +1,19 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import React from "react";
-import { FacebookWhite, Instagramwhite, TwitterWhite } from "../../../assets/svgs/svg";
-
-
-
+import {
+  FacebookWhite,
+  Instagramwhite,
+  TwitterWhite,
+} from "../../../assets/svgs/svg";
 
 const Left = () => {
   return (
     <div className="bg-gradient-to-br from-primaryPurple to-primaryPurple rounded-3xl p-10 text-white flex flex-col justify-between max-h-[600px] shadow-2xl">
-      
       <div>
         <h2 className="text-4xl font-bold mb-3">Contact information</h2>
         <p className="text-purple-200 text-lg">Want to make inquires?</p>
       </div>
 
-      
       <div className="space-y-6 my-8">
         <a
           href="tel:+2349164588817"
@@ -44,17 +43,18 @@ const Left = () => {
         </div>
       </div>
 
-      
       <div className="flex items-center gap-5 pt-6 border-t border-white/20">
         <a
-          href="#"
+          href="https://www.facebook.com/opticdigitalltd"
+          target="_blank"
           className="bg-white/10 p-3 rounded-full hover:bg-white/20 hover:scale-110 transition-all duration-300"
           aria-label="Facebook"
         >
           <FacebookWhite />
         </a>
         <a
-          href="#"
+          href="https://instagram.com/optic_digitals"
+          target="_blank"
           className="bg-white/10 p-3 rounded-full hover:bg-white/20 hover:scale-110 transition-all duration-300"
           aria-label="Instagram"
         >
