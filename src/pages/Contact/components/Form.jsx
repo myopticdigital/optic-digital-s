@@ -27,7 +27,7 @@ const Form = () => {
         </div>
       </div>
       <div className="flex items-start gap-8 w-full">
-        <div className="flex-1 flex-col flex items-start">
+        <div className="flex-1 gap-5 md:gap-0 flex-col flex items-start">
           <label htmlFor="email" className="text-sm text-gray-500 mb-2">
             Email Address
           </label>

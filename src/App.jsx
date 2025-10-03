@@ -10,7 +10,8 @@ import Carreer from "./pages/careers/Carreer";
 
 function App() {
   return (
-    <Routes>
+    <div className="cursor-default">
+      <Routes>
       <Route element={<Layout />}>
         <Route element={<Home />} path="/" />
         <Route element={<About />} path="/aboutus" />
@@ -20,6 +21,7 @@ function App() {
         <Route element={<Carreer />} path="/careers" />
       </Route>
     </Routes>
+    </div>
   );
 }
 
