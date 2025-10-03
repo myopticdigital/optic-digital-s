@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <div
-        className={`fixed top-0 left-0 w-full z-50 transform transition-transform duration-300 ${
+        className={`fixed -top-2 left-0 w-full z-50 transform transition-transform duration-300 ${
           isVisible ? "translate-y-0" : "-translate-y-full"
         }`}
       >

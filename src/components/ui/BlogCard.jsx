@@ -1,8 +1,17 @@
 import React from "react";
+import { useBlogStore } from "../../utils/useBlogStore";
+import { useNavigate } from "react-router";
 
 const BlogCard = ({ image, title, author, authorImage, date, id }) => {
+  const setId = useBlogStore((state) => state.setId)
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    setId(id);
+    navigate(`/blogs/${id}`)
+  }
   return (
-    <a href={`/blogs/${id}`} className="flex flex-col items-start gap-3 p-3 border max-w-[397px] max-h-[444px] overflow-hidden rounded-2xl border-[#DADADA]">
+    <div onClick={handleClick} className="flex flex-col items-start gap-3 p-3 border max-w-[397px] max-h-[444px] overflow-hidden rounded-2xl border-[#DADADA]">
       
       <img src={image} className="rounded-xl w-full h-48 object-cover" alt={title} />
 
@@ -19,7 +28,7 @@ const BlogCard = ({ image, title, author, authorImage, date, id }) => {
         </div>
         <p className="text-[#969696]">{date}</p>
       </div>
-    </a>
+    </div>
   );
 };
 

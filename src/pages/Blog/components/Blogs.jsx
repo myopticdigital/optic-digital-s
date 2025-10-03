@@ -1,87 +1,22 @@
 import React from "react";
 import BlogCard from "../../../components/ui/BlogCard";
+import { blogs } from "../../../utils/blogs";
 
 const Blogs = () => {
   return (
     <div className="py-7 px-5 flex flex-col gap-4">
       <div className="flex gap-3 flex-wrap">
-        <BlogCard
-          image="/blogi.jpg"
-          title="5 Proven Marketing Strategies to Boost Brand Awareness in 2025"
-          author="Abraham Segun"
-          authorImage="/worker1.jpg"
-          date="October 1, 2025"
-        />
-        <BlogCard
-          image="/blogi.jpg"
-          title="5 Proven Marketing Strategies to Boost Brand Awareness in 2025"
-          author="Abraham Segun"
-          authorImage="/worker1.jpg"
-          date="October 1, 2025"
-        />
-        <BlogCard
-          image="/blogi.jpg"
-          title="5 Proven Marketing Strategies to Boost Brand Awareness in 2025"
-          author="Abraham Segun"
-          authorImage="/worker1.jpg"
-          date="October 1, 2025"
-        />
-        <BlogCard
-          image="/blogi.jpg"
-          title="5 Proven Marketing Strategies to Boost Brand Awareness in 2025"
-          author="Abraham Segun"
-          authorImage="/worker1.jpg"
-          date="October 1, 2025"
-        />
-        <BlogCard
-          image="/blogi.jpg"
-          title="5 Proven Marketing Strategies to Boost Brand Awareness in 2025"
-          author="Abraham Segun"
-          authorImage="/worker1.jpg"
-          date="October 1, 2025"
-        />
-        <BlogCard
-          image="/blogi.jpg"
-          title="5 Proven Marketing Strategies to Boost Brand Awareness in 2025"
-          author="Abraham Segun"
-          authorImage="/worker1.jpg"
-          date="October 1, 2025"
-        />
-        <BlogCard
-          image="/blogi.jpg"
-          title="5 Proven Marketing Strategies to Boost Brand Awareness in 2025"
-          author="Abraham Segun"
-          authorImage="/worker1.jpg"
-          date="October 1, 2025"
-        />
-        <BlogCard
-          image="/blogi.jpg"
-          title="5 Proven Marketing Strategies to Boost Brand Awareness in 2025"
-          author="Abraham Segun"
-          authorImage="/worker1.jpg"
-          date="October 1, 2025"
-        />
-        <BlogCard
-          image="/blogi.jpg"
-          title="5 Proven Marketing Strategies to Boost Brand Awareness in 2025"
-          author="Abraham Segun"
-          authorImage="/worker1.jpg"
-          date="October 1, 2025"
-        />
-        <BlogCard
-          image="/blogi.jpg"
-          title="5 Proven Marketing Strategies to Boost Brand Awareness in 2025"
-          author="Abraham Segun"
-          authorImage="/worker1.jpg"
-          date="October 1, 2025"
-        />
-        <BlogCard
-          image="/blogi.jpg"
-          title="5 Proven Marketing Strategies to Boost Brand Awareness in 2025"
-          author="Abraham Segun"
-          authorImage="/worker1.jpg"
-          date="October 1, 2025"
-        />
+        {blogs.map((blog) => (
+          <BlogCard
+            key={blog.id}
+            image={blog.image}
+            title={blog.title}
+            author={blog.author}
+            authorImage={blog.authorImage}
+            date={blog.date}
+            id={blog.id}
+          />
+        ))}
         
       </div>
       <div className="flex items-center justify-center">
