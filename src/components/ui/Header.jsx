@@ -7,14 +7,14 @@ const Header = ({ setShowNav }) => {
   const pathName = loction.pathname
 
   return (
-    <div className='flex items-center justify-between md:px-[95px] sticky top-0 z-20 px-10 py-[15px] bg-white'>
+    <div className='flex items-center justify-between md:px-[95px]  z-20 px-10 py-[15px] bg-white'>
       <a href="/"><img src="src/assets/logo.svg" alt="logo" /></a>
 
       <nav className='md:flex items-center hidden gap-7'>
         <a href="/aboutus" className={`text-[16px] ${ pathName === '/aboutus' ? 'text-primaryPurple' : 'text-black' }`}>About us</a>
-        <a href="#" className={`text-[16px] ${ pathName === '/services' ? 'text-primaryPurple' : 'text-black' }`}>Our Services</a>
-        <a href="blogs" className={`text-[16px] ${ pathName.includes('blogs') ? 'text-primaryPurple' : 'text-black' }`}>Blog</a>
-        <a href="#" className={`text-[16px] ${ pathName === '/careers' ? 'text-primaryPurple' : 'text-black' }`}>Careers</a>
+        <a href="/services" className={`text-[16px] ${ pathName === '/services' ? 'text-primaryPurple font-medium' : 'text-black' }`}>Our Services</a>
+        <a href="/blogs" className={`text-[16px] ${ pathName.includes('blogs') ? 'text-primaryPurple' : 'text-black' }`}>Blog</a>
+        <a href="/careers" className={`text-[16px] ${ pathName === '/careers' ? 'text-primaryPurple' : 'text-black' }`}>Careers</a>
         <a href="contact" className={`text-[16px] ${ pathName === '/contact' ? 'text-primaryPurple' : 'text-black' }`}>Contact us</a>
       </nav>
 
