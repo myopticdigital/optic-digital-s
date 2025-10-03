@@ -1,22 +1,20 @@
-import React, { useState, useEffect } from 'react'
-import Header from './ui/Header'
-import { Outlet } from 'react-router'
-import Footer from './ui/Footer'
-import MobileMenu from './ui/MobileMenu'
+import React, { useState, useEffect } from "react";
+import Header from "./ui/Header";
+import { Outlet } from "react-router";
+import Footer from "./ui/Footer";
+import MobileMenu from "./ui/MobileMenu";
 
 const Layout = ({ children }) => {
-  const [showNav, setShowNav] = useState(false)
-  const [isSticky, setIsSticky] = useState(false);
+  const [showNav, setShowNav] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY < lastScrollY) {
-        // user scrolled up
-        setIsSticky(true);
+        setIsVisible(true);
       } else {
-        // user scrolled down
-        setIsSticky(false);
+        setIsVisible(false);
       }
       setLastScrollY(window.scrollY);
     };
@@ -29,7 +27,11 @@ const Layout = ({ children }) => {
   }, [lastScrollY]);
   return (
     <>
-      <div className={`${isSticky ? "sticky top-0 z-50" : "relative"}`}>
+      <div
+        className={`fixed top-0 left-0 w-full z-50 transform transition-transform duration-300 ${
+          isVisible ? "translate-y-0" : "-translate-y-full"
+        }`}
+      >
         <Header setShowNav={setShowNav} />
       </div>
       <main>
@@ -38,7 +40,7 @@ const Layout = ({ children }) => {
       <Footer />
       <MobileMenu isOpen={showNav} setIsOpen={setShowNav} />
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
