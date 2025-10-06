@@ -22,7 +22,7 @@ const BlogDetail = () => {
       return;
     }
 
-    setBlogMeta(selectedBlog); // store metadata
+    setBlogMeta(selectedBlog); 
 
     const loadBlog = async () => {
       try {
@@ -101,7 +101,7 @@ const BlogDetail = () => {
               />
             ),
             a: ({ node, ...props }) => (
-              <a
+              <ak
                 className="text-blue-600 underline hover:text-blue-800"
                 target="_blank"
                 rel="noopener noreferrer"

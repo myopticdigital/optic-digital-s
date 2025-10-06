@@ -3,11 +3,11 @@ import React from "react";
 const InfoCard = ({ image, text, heading, imagealign, className, use }) => {
   return (
     <div
-      className={`flex md:flex-row flex-col items-center gap-10 p-7 mx-3 rounded-xl md:w-[1200px] justify-between ${className}`}
+      className={`flex md:flex-row flex-col items-center gap-10 p-7  md:rounded-xl md:w-[1200px] justify-between ${className}`}
     >
       {imagealign === "left" && (
         <div>
-          <img src={image} className="md:w-[549px] w-[300px] h-[155px] md:h-[355px] rounded-xl" alt="" />
+          <img src={image} className="w-[549px] h-[355px] rounded-xl" alt="" />
         </div>
       )}
 
@@ -24,7 +24,7 @@ const InfoCard = ({ image, text, heading, imagealign, className, use }) => {
           </div>
           <img
             src="/ab3.jpg"
-            className="md:w-[315px] w-[300px] h-[155px] md:h-[250px] rounded-xl"
+            className="md:w-[315px] w-[549px] h-[355px] md:h-[250px] rounded-xl"
             alt=""
           />
           <img

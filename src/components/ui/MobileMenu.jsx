@@ -7,9 +7,9 @@ const MobileMenu = ({ isOpen, setIsOpen }) => {
     const pathName = location.pathname
     const navRef = useRef(null)
   return (
-    <div className={`fixed transition duration-300 md:hidden top-0 z-50 bg-white/25 ${
-        isOpen ? 'translate-y-0' : '-translate-y-full '
-    }  backdrop-blur-lg w-full h-full`} ref={navRef}>
+    <div className={`fixed transition duration-300 ease-in md:hidden top-0 z-50 bg-white/65 ${
+        isOpen ? 'translate-x-0' : '-translate-x-full '
+    }  backdrop-blur-xl w-full h-full`} ref={navRef}>
         <div></div>
         <div className='relative'>
             <div className='absolute top-10 right-10' onClick={() => setIsOpen(false)}>
@@ -17,11 +17,11 @@ const MobileMenu = ({ isOpen, setIsOpen }) => {
             </div>
         </div>
         <nav className='flex flex-col items-center justify-center h-full gap-7'>
-        <a href="/aboutus" className={`text-[25px] ${ pathName === '/aboutus' ? 'text-primaryPurple font-medium' : 'text-white' }`}>About us</a>
-        <a href="/services" className={`text-[25px] ${ pathName === '/services' ? 'text-primaryPurple font-medium' : 'text-white' }`}>Our Services</a>
-        <a href="/blogs" className={`text-[25px] ${ pathName.includes('blogs') ? 'text-primaryPurple font-medium' : 'text-white' }`}>Blog</a>
-        <a href="/careers" className={`text-[25px] ${ pathName === '/careers' ? 'text-primaryPurple font-medium' : 'text-white' }`}>Careers</a>
-        <a href="/contact" className={`text-[25px] ${ pathName === '/contact' ? 'text-primaryPurple font-medium' : 'text-white' }`}>Contact us</a>
+        <a href="/aboutus" className={`text-[25px] ${ pathName === '/aboutus' ? 'text-primaryPurple font-medium' : 'text-black' }`}>About us</a>
+        <a href="/services" className={`text-[25px] ${ pathName === '/services' ? 'text-primaryPurple font-medium' : 'text-black' }`}>Our Services</a>
+        <a href="/blogs" className={`text-[25px] ${ pathName.includes('blogs') ? 'text-primaryPurple font-medium' : 'text-black' }`}>Blog</a>
+        <a href="/careers" className={`text-[25px] ${ pathName === '/careers' ? 'text-primaryPurple font-medium' : 'text-black' }`}>Careers</a>
+        <a href="/contact" className={`text-[25px] ${ pathName === '/contact' ? 'text-primaryPurple font-medium' : 'text-black' }`}>Contact us</a>
       </nav>
 
     </div>

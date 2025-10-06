@@ -25,7 +25,7 @@ const GettoKnow = () => {
     },
   ];
   return (
-    <div className="flex py-10 gap-10 flex-col items-center justify-center">
+    <div className="flex md:py-10 md:gap-10 flex-col items-center justify-center">
       {information.map((info, i) => (
         <InfoCard
           key={i}

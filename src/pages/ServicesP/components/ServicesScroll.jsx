@@ -170,7 +170,7 @@ const ServicesScroll = () => {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
-      <div className="space-y-48 p-8 md:p-20 bg-gradient-to-b from-gray-100 to-gray-50">
+      <div className="space-y-10 md:space-y-48 p-8 md:p-20 bg-gradient-to-b from-gray-100 to-gray-50">
         <div className="pt-24 md:pt-48">
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tightest mb-4">
             Our Digital Services
@@ -190,7 +190,7 @@ const ServicesScroll = () => {
               key={section.id}
               ref={(el) => (sectionRefs.current[i] = el)}
               data-index={i}
-              className="h-[120vh] flex flex-col justify-center max-w-2xl md:mx-0"
+              className={`md:h-[120vh] bg-white rounded-xl shadow ring-2 ${sectionColors.ring} md:bg-transparent md:ring-0 md:shadow-none flex flex-col justify-center max-w-2xl md:mx-0`}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: false, amount: 0.2 }}
@@ -218,7 +218,7 @@ const ServicesScroll = () => {
                   {section.text}
                 </motion.p>
 
-                <button className={`cursor-pointer hover:opacity-75 transition-all duration-300 font-neue ${sectionColors.bg} px-6 py-3 text-white rounded-4xl font-medium`}>
+                <button className={`cursor-pointer hidden md:block hover:opacity-75 transition-all duration-300 font-neue ${sectionColors.bg} px-6 py-3 text-white rounded-4xl font-medium`}>
                   <a href="/contact">Contact us</a>
                 </button>
               </div>

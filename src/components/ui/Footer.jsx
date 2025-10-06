@@ -21,7 +21,7 @@ const Footer = () => {
           Stay updated with the latest marketing trends and news all delivered
           straight to your inbox
         </p>
-        <div className="flex w-full flex-col md:flex-row items-center gap-2 ">
+        <div className="flex w-full flex-row items-center gap-2 ">
           <div className="flex items-center px-4 py-3.5 border rounded-2xl cursor-pointer gap-2">
             <Email />
             <input
