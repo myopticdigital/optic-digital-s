@@ -62,7 +62,7 @@ const BlogDetail = () => {
   }
 
   return (
-    <article className="prose lg:prose-lg mt-20 mx-auto max-w-4xl">
+    <article className="prose lg:prose-lg mt-20 mx-auto max-w-md md:max-w-4xl">
       {blogMeta && (
         <header className="mb-8">
           <h1 className="text-4xl font-bold mb-4">{blogMeta.title}</h1>
