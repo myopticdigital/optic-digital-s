@@ -39,7 +39,14 @@ const Left = () => {
           <div className="bg-white/10 p-3 rounded-full group-hover:bg-white/20 transition-colors">
             <MapPin className="w-5 h-5" />
           </div>
-          <span className="text-lg">43 Powell House, Enfield, London</span>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=43+Powell+House,+Enfield,+London"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-lg"
+          >
+            43 Powell House, Enfield, London
+          </a>
         </div>
       </div>
 

@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
     <>
       <div
         className={`fixed -top-2 left-0 w-full z-50 transform transition-transform duration-300 ${
-          isVisible ? "translate-y-0" : "-translate-y-full"
+          isVisible ? " translate-y-0" : "-translate-y-full"
         }`}
       >
         <Header setShowNav={setShowNav} />

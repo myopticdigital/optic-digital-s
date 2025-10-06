@@ -1,10 +1,10 @@
 import { Search } from "lucide-react";
 import React from "react";
 
-const HeroSection = () => {
+const HeroSection = ({ searchValue, setSearchValue }) => {
   return (
-    <div className="bg-[url('ab.png')] relative bg-cover bg-blend-lighten bg-no-repeat items-center  text-white flex flex-col justify-center h-[30rem]">
-      <div className="flex flex-col z-10 gap-4 items-center justify-center max-w-2xl">
+    <div className="bg-[url('ab.png')] relative bg-cover bg-blend-lighten bg-no-repeat mt-5 items-center  text-white flex flex-col justify-center h-[30rem]">
+      <div className="flex flex-col z-10 gap-4 items-center justify-center max-w-md md:max-w-2xl">
         <h4 className="bg-[#5206C066] p-2 rounded-full text-[20px] text-center">
           Our blog
         </h4>
@@ -17,7 +17,7 @@ const HeroSection = () => {
         </p>
       <div className="flex items-center md:w-[517px] w-[300px] gap-2 h-[50px] px-[24px] text-black bg-white rounded-[100px]">
         <Search />
-        <input type="text" name="" className="flex-1 focus:outline-0" placeholder="Search for topics or authors" id="" />
+        <input type="text" name="" value={searchValue} onChange={setSearchValue} className="flex-1 focus:outline-0" placeholder="Search for topics or authors" id="" />
       </div>
 
       </div>

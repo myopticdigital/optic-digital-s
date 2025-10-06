@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <div className='relative h-[35rem] bg-[url("/careerbg.jpg")] bg-cover bg-center flex items-center justify-center'>
+    <div className='relative h-[35rem] bg-[url("/careerbg.jpg")] mt-5 bg-cover bg-center flex items-center justify-center'>
      
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40"></div>
 
