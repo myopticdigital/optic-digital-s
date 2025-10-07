@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 
-
 const ServiceCard = ({
     icon,
     serviceTitle,
@@ -22,7 +21,7 @@ const ServiceCard = ({
         y: -12,
         transition: { duration: 0.3, ease: "easeOut" }
       }}
-      className='flex cursor-default flex-col items-start max-w-80 gap-3 p-4 bg-[#F4F4F4] rounded-[20px]  transition-shadow duration-300'
+      className='flex cursor-default flex-col items-start max-w-80 gap-3 p-4 bg-[#F4F4F4] rounded-[20px] transition-shadow duration-300'
     >
       <motion.div 
         whileHover={{ scale: 1.1, rotate: 5 }}
@@ -32,11 +31,11 @@ const ServiceCard = ({
         {icon}
       </motion.div>
       
-      <h3 className='font-neue capitalize font-medium text-2xl'>
+      <h3 className='font-neue capitalize font-medium text-lg'> {/* Changed from text-2xl to text-lg (18px) */}
         {serviceTitle}
       </h3>
 
-      <p className='text-[#575757]'>{bodyText}</p>
+      <p className='text-[#575757] text-xs leading-relaxed'>{bodyText}</p> {/* Added text-xs (12px) and leading-relaxed */}
     </motion.div>
   )
 }

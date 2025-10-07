@@ -4,10 +4,10 @@ const GetToKnow = () => {
   return (
     <section className="bg-primaryPurple text-[#E9E9E9] py-10">
       <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
-        <div className=" overflow-hidden md:w-[500px] hidden md:block md:h-[470px] rounded-[40px]">
+        <div className=" overflow-hidden md:w-[450px] hidden md:block md:h-[470px] rounded-[40px]">
             <img src="/gettoknowpic.jpg" className="w-[700px] h-[600px]" alt="" />
         </div>
-        <div className="max-w-md flex items-start flex-col px-5 gap-2">
+        <div className="max-w-[500px] flex items-start flex-col px-5 gap-2">
           <h1 className="font-neue text-white font-bold text-[36px]">
             Get to know Optic Digital
           </h1>
@@ -20,19 +20,19 @@ const GetToKnow = () => {
             local insights to amplify your brand's impact.
           </p>
           <div>
-            <p>
+            <p className="mt-3">
               Our clients describe us as a powerhouse of creative intellect,
               fueled by consumer insights and propelled by an insatiable desire
               to innovate.
             </p>
 
-            <p>
+             <p className="mt-3">
               We are not just a digital agency; we are a force to be reckoned
               with, transforming challenges into triumphs and ideas into
               immersive digital experiences.
             </p>
 
-            <p>
+             <p className="mt-3">
               Optic Digital - Where strategy meets pixels, and brilliance
               becomes the standard.
             </p>

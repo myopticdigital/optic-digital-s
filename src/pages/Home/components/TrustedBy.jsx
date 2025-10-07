@@ -17,15 +17,15 @@ const TrustedBy = () => {
     "/logo7.png",
   ];
   return (
-    <div className="flex flex-col gap-3 py-7">
-      <h1 className="font-neue text-center font-bold text-[36px]">
+    <div className="max-w-[1200px] overflow-hidden m-auto flex flex-col gap-3 py-7">
+      <h1 className="font-neue text-center font-bold text-[36px] mb-10">
         Trusted by
       </h1>
       {/* Slider for company logos */}
       <div className="w-full">
         <Swiper
           modules={[Autoplay]}
-          slidesPerView={5}
+          slidesPerView={6}
           loop={true}
           autoplay={{ delay: 1500, disableOnInteraction: false }}
           breakpoints={{

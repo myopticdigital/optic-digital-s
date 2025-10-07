@@ -102,7 +102,7 @@ const OurServices = () => {
           </motion.h1>
           
           <motion.p 
-            className="leading-6 text-gray-600"
+            className="text-[#575757] text-base leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
