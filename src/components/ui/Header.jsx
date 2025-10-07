@@ -8,7 +8,7 @@ const Header = ({ setShowNav }) => {
 
   return (
     <div className='flex items-center justify-between md:px-[95px]  z-20 px-10 py-[15px] bg-white'>
-      <a href="/"><img src="src/assets/logo.svg" alt="logo" /></a>
+      <a href="/"><img src="/logo.svg" alt="logo" /></a>
 
       <nav className='md:flex items-center hidden gap-7'>
         <a href="/aboutus" className={`text-[16px] ${ pathName === '/aboutus' ? 'text-primaryPurple' : 'text-black' }`}>About us</a>
