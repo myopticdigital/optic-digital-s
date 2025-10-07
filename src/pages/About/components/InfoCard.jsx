@@ -15,7 +15,7 @@ const InfoCard = ({ image, text, heading, imagealign, className, use }) => {
         <div className="relative md:w-[549px] md:h-[355px]">
           
             <div
-              className="md:flex rounded-xl absolute top-10 hidden p-3 w-[201px] right-5 flex-col bg-primaryPurple text-white [clipPath 'polygon(0 0, 63% 0, 100% 99%, 0% 100%)']"
+              className="md:flex rounded-xl absolute top-10 hidden p-3 w-[201px] right-5 flex-col bg-primaryPurple text-white [clip-path:polygon(0_0,63%_0,100%_99%,0%_100%)]"
             >
                             
               <h1 className="font-neue font-bold">4+</h1>
