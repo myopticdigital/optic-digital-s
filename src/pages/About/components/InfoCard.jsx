@@ -3,7 +3,7 @@ import React from "react";
 const InfoCard = ({ image, text, heading, imagealign, className, use }) => {
   return (
     <div
-      className={`flex md:flex-row flex-col items-center gap-10 p-7  md:rounded-xl md:w-[1200px] justify-between ${className}`}
+      className={`flex md:flex-row flex-col items-center gap-10 p-7 md:mx-10  md:rounded-xl md:w-[1000px] justify-between ${className}`}
     >
       {imagealign === "left" && (
         <div className="md:w-[500px] overflow-hidden">
