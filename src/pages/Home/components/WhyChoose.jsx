@@ -29,9 +29,9 @@ const WhyChoose = () => {
         }
     ]
   return (
-    <div className='flex items-center justify-center flex-col py-7 gap-4'>
-        <h3 className='capitalize font-neue font-bold text-[34px] md:text-[36px]'>Why Choose Optic Digital</h3>
-        <p className='text-center max-w-xl md:max-w-2xl'>Every brand has its own story, and we craft strategies designed to highlight what makes yours unique while driving real, measurable results</p>
+    <div className='flex items-center px-3 justify-center flex-col py-7 gap-4'>
+        <h3 className='capitalize font-neue text-center font-bold text-[34px] md:text-[36px]'>Why Choose Optic Digital</h3>
+        <p className='text-center max-w-md md:max-w-2xl'>Every brand has its own story, and we craft strategies designed to highlight what makes yours unique while driving real, measurable results</p>
 
         <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4'>
             {

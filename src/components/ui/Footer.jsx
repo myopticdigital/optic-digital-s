@@ -11,7 +11,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="bg-primaryPurple grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3  place-items-start place-content-between px-12 py-12 text-white">
+    <div className="bg-primaryPurple grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3  place-items-start place-content-between px-3 md:px-12 py-12 text-white">
       <div className="ld:max-w-sm max-w-xl col-span-2 flex flex-col items-start gap-4">
         <img src="/whitelogo.png" className="w-36" alt="" />
         <h5 className="font-neue font-medium text-[24px] leading-[40px]">
@@ -21,17 +21,17 @@ const Footer = () => {
           Stay updated with the latest marketing trends and news all delivered
           straight to your inbox
         </p>
-        <div className="flex flex-row items-center gap-2 ">
-          <div className="flex items-center px-4 py-3.5 border rounded-2xl cursor-pointer gap-2">
+        <div className="flex w-[350px] md:w-[500px] overflow-hidden  flex-row items-center gap-2 ">
+          <div className="flex w-1/2  items-center px-4 py-3.5 border rounded-2xl cursor-pointer gap-2">
             <Email />
             <input
               type="email"
               placeholder="Email address"
-              className="flex-1 placeholder:text-white focus:outline-0"
+              className="flex-1 w-full placeholder:text-white focus:outline-0"
             />
           </div>
 
-          <button className="px-7 py-3.5 bg-white text-primaryPurple rounded-2xl">
+          <button className="px-5 md:px-7 py-3.5 bg-white text-primaryPurple rounded-2xl">
             Subscribe
           </button>
         </div>

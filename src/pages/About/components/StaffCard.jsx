@@ -3,7 +3,7 @@ import { LinkedInB } from "../../../assets/svgs/svg";
 
 const StaffCard = ({ image, office, name }) => {
   return (
-    <div className="w-[397px] h-[442px] overflow-hidden relative rounded-tr-[100px] rounded-2xl">
+    <div className="md:w-[397px] w-[300px] h-[360px] md:h-[442px] overflow-hidden relative rounded-tr-[100px] rounded-2xl">
       <img
         src={image}
         alt="Abraham Segun"

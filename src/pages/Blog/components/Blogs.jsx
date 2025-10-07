@@ -7,7 +7,7 @@ const Blogs = ({ searchValue }) => {
 
   
   const displayedBlogs = (isFiltered ? blogs.slice(0, 3) : blogs).filter((blog) =>
-    blog.title.toLowerCase().includes(searchValue.trim().toLowerCase())
+    blog.title.toLowerCase().includes(searchValue.trim().toLowerCase()) || blog.author.toLowerCase().includes(searchValue.trim().toLowerCase())
   );
 
   return (
