@@ -9,7 +9,7 @@ const TestimonialCard = ({
     <div className='flex rounded-2xl items-start justify-between max-w-96 h-96 gap-4 p-7 flex-col bg-white text-black'>
         <img src="/quotes.png" alt="quotes" />
 
-        <p className='text-[20px] leading-[32px]'>{testimony}</p>
+        <p className='text-[14px] leading-base'>{testimony}</p>
 
         <div className='flex items-center gap-4'>
             <img src={logo} className='w-8 h-8 rounded-full' alt="logo" />

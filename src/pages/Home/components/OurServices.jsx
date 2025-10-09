@@ -92,7 +92,7 @@ const OurServices = () => {
           className="max-w-80 text-[16px] lg:sticky top-24"
         >
           <motion.h1 
-            className="capitalize text-[36px] font-bold mb-4 text-gray-900"
+            className="capitalize text-[24px] md:text-[32px] font-bold mb-4 text-gray-900"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

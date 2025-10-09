@@ -9,12 +9,12 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40"></div>
 
      
-      <div className="relative z-10 text-center px-6 max-w-3xl">
+      <div className="relative z-10 text-center px-6 max-w-4xl pt-15">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-6xl font-extrabold text-white leading-tight drop-shadow-lg"
+          className="text-[30px] md:text-[45px] font-extrabold text-white leading-tight drop-shadow-lg"
         >
           We bring a wealth of experience from diverse backgrounds
         </motion.h1>

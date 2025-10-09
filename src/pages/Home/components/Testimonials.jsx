@@ -31,8 +31,8 @@ const Testimonials = () => {
   ];
   return (
     <div className="bg-primaryPurple py-7 px-7 gap-4 flex flex-col items-center justify-center text-white">
-      <h4 className="font-neue font-bold text-[36px]">Testimonials</h4>
-      <p className="leading-[24px] text-[16px]">
+      <h4 className="font-neue font-bold text-[24px] md:text-[32px]">Testimonials</h4>
+      <p className="leading-[24px] text-[16px] mb-6">
         Don’t just take our word for it. Here’s what brands we’ve worked with
         have to say
       </p>

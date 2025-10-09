@@ -35,10 +35,10 @@ const InfoCard = ({ image, text, heading, imagealign, className, use }) => {
       )}
 
       <div className="flex flex-col items-start gap-4">
-        <h3 className="font-neue font-bold text-[36px] leading-[44px]">
+        <h3 className="font-neue font-bold text-[24px] md:text-[32px]">
           {heading}
         </h3>
-        <p className="leading-[24px] max-w-[546px]">{text}</p>
+        <p className="leading-[16px] max-w-[546px]">{text}</p>
       </div>
 
       {imagealign === "right" && (

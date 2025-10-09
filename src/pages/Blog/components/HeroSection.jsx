@@ -4,12 +4,12 @@ import React from "react";
 const HeroSection = ({ searchValue, setSearchValue }) => {
   return (
     <div className="bg-[url('ab.png')] relative bg-cover bg-blend-lighten bg-no-repeat mt-5 items-center  text-white flex flex-col justify-center h-[30rem]">
-      <div className="flex flex-col z-10 gap-4 items-center justify-center max-w-md md:max-w-2xl">
+      <div className="flex flex-col z-10 gap-4 items-center justify-center max-w-md md:max-w-3xl">
         <h4 className="bg-[#5206C066] p-2 rounded-full text-[20px] text-center">
           Our blog
         </h4>
 
-        <h1 className="text-center capitalize leading-[64px] text-[34px] md:text-[56px] font-neue font-bold">
+        <h1 className="text-center capitalize leading-[64px] text-[30px] md:text-[45px] font-neue font-bold">
          Insights that drive growth
         </h1>
         <p className="text-center">

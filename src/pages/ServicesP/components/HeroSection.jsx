@@ -3,12 +3,12 @@ import React from "react";
 const HeroSection = () => {
   return (
     <div className="bg-[url('service1.jpg')] relative bg-cover bg-blend-lighten bg-no-repeat items-center  text-white flex flex-col justify-center h-[37em]">
-      <div className="flex flex-col z-10 items-center justify-center max-w-md  md:max-w-2xl">
+      <div className="flex flex-col z-10 items-center justify-center max-w-md  md:max-w-3xl">
         <h4 className="bg-[#5206C066] p-2 rounded-full text-[20px] text-center">
           Our Services
         </h4>
 
-        <h1 className="text-center md:leading-[64px]  text-[34px] md:text-[56px] font-neue font-bold">
+        <h1 className="text-center md:leading-base  text-[30px] md:text-[45px] font-neue font-bold">
          Tailored solutions designed to elevate your business
         </h1>
         <p className="text-center">

@@ -21,7 +21,7 @@ const ServiceCard = ({
         y: -12,
         transition: { duration: 0.3, ease: "easeOut" }
       }}
-      className='flex cursor-default flex-col items-start max-w-80 gap-3 p-4 bg-[#F4F4F4] rounded-[20px] transition-shadow duration-300'
+      className='flex cursor-default flex-col items-start max-w-[90%] mx-auto  sm:max-w-80 gap-3 p-4 bg-[#F4F4F4] rounded-[20px] transition-shadow duration-300'
     >
       <motion.div 
         whileHover={{ scale: 1.1, rotate: 5 }}

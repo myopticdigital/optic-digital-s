@@ -18,7 +18,7 @@ const TrustedBy = () => {
   ];
   return (
     <div className="max-w-[1200px] overflow-hidden m-auto flex flex-col gap-3 py-7">
-      <h1 className="font-neue text-center font-bold text-[36px] mb-10">
+      <h1 className="font-neue text-center font-bold text-[24px] md:text-[32px] mb-10">
         Trusted by
       </h1>
       {/* Slider for company logos */}

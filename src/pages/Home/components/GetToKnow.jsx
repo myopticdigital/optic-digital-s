@@ -8,7 +8,7 @@ const GetToKnow = () => {
             <img src="/gettoknowpic.jpg" className="w-[700px] h-[600px]" alt="" />
         </div>
         <div className="max-w-[500px] flex items-start flex-col px-5 gap-2">
-          <h1 className="font-neue text-white font-bold text-[36px]">
+          <h1 className="font-neue text-white font-bold text-[24px] md:text-[32px]">
             Get to know Optic Digital
           </h1>
           <p>

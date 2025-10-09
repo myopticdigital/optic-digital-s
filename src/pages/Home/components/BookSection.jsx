@@ -6,7 +6,7 @@ const BookSection = () => {
   return (
     <div className="bg-[#FEEDD9] flex flex-col-reverse md:flex-row items-center justify-center gap-20 p-7">
       <div className="max-w-[30rem] p-2 flex items-start gap-3 flex-col">
-        <h4 className="font-neue leading-[44px] font-bold text-[36px]">
+        <h4 className="font-neue leading-[44px] font-bold text-[24px] md:text-[32px]">
           Ready to Grow Your Brand and Scale Exponentially?
         </h4>
         <p className="leading-[24px]">

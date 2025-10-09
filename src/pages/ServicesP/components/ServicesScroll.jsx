@@ -172,7 +172,7 @@ const ServicesScroll = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
       <div className="space-y-10 md:space-y-48 p-8 md:p-20 bg-gradient-to-b from-gray-100 to-gray-50">
         <div className="pt-24 md:pt-48">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tightest mb-4">
+          <h1 className="text-[24px] md:text-[32px] font-extrabold text-gray-900 tracking-tightest mb-4">
             Our Digital Services
           </h1>
           <p className="text-xl text-gray-600 max-w-lg">
@@ -204,7 +204,7 @@ const ServicesScroll = () => {
                 `}
               >
                 <h2
-                  className={`text-3xl md:text-4xl font-black mb-4 tracking-tight transition-colors duration-500 ${
+                  className={`text-[24px] md:text-[32px] font-black mb-4 tracking-tight transition-colors duration-500 ${
                     isActive ? sectionColors.text : "text-gray-900"
                   }`}
                 >

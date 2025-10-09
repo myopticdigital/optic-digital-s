@@ -51,7 +51,7 @@ const BenefitsSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-3xl md:text-4xl font-bold text-white"
+          className="text-[24px] md:text-[32px]  font-bold text-white"
         >
           Benefits & Perks
         </motion.h2>
