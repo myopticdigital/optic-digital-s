@@ -38,7 +38,7 @@ const InfoCard = ({ image, text, heading, imagealign, className, use }) => {
         <h3 className="font-neue font-bold text-[24px] md:text-[32px]">
           {heading}
         </h3>
-        <p className="leading-[16px] max-w-[546px]">{text}</p>
+        <p className="leading-[16px] max-w-[546px] leading-relaxed">{text}</p>
       </div>
 
       {imagealign === "right" && (

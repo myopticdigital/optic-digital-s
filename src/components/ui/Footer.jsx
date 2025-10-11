@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <div className="bg-primaryPurple px-3 md:px-12 py-12 text-white">
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3  place-items-start place-content-between">
-        <div className="ld:max-w-sm max-w-xl col-span-2 flex flex-col items-start gap-4">
+        <div className="ld:max-w-sm max-w-xl col-span-2 flex flex-col items-start gap-1">
           <img src="/whitelogo.png" className="w-36" alt="" />
           <h5 className="font-neue font-medium text-[18px] leading-[40px]">
             Sign up for our newsletter
@@ -40,7 +40,7 @@ const Footer = () => {
 
         <div className="max-w-sm flex flex-col gap-4">
           <h5 className="font-neue font-bold text-[16px]">Quick links</h5>
-          <ul className="text-[#E9E9E9] space-y-5 font-normal text-[12px]">
+          <ul className="text-[#E9E9E9] space-y-1 font-normal text-[12px]">
             <li>
               <a href="/services">Our services</a>
             </li>
