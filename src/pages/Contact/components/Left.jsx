@@ -10,7 +10,9 @@ const Left = () => {
   return (
     <div className="bg-gradient-to-br from-primaryPurple to-primaryPurple rounded-3xl p-10 text-white flex flex-col justify-between max-h-[600px] shadow-2xl">
       <div>
-        <h2 className="text-[24px] md:text-[32px] font-bold mb-3">Contact information</h2>
+        <h2 className="text-[22px] md:text-[30px] font-bold mb-3">
+          Contact information
+        </h2>
         <p className="text-purple-200 text-lg">Want to make inquires?</p>
       </div>
 

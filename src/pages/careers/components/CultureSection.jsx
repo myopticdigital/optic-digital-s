@@ -41,7 +41,7 @@ const CultureSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-[24px] md:text-[32px] font-extrabold text-gray-900"
+          className="text-[22px] md:text-[30px] font-extrabold text-gray-900"
         >
           Our Core Culture
         </motion.h2>

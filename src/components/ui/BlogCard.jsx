@@ -16,7 +16,7 @@ const BlogCard = ({ image, title, author, authorImage, date, id }) => {
       <img src={image} className="rounded-xl w-full h-48 object-cover" alt={title} />
 
       
-      <h3 className="font-semibold text-[24px] leading-[28px] max-w-[340px] line-clamp-2">
+      <h3 className="font-semibold text-[16px] leading-base max-w-[340px] line-clamp-2">
         {title}
       </h3>
 

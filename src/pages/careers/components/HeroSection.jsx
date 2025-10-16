@@ -4,26 +4,26 @@ import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <div className='relative h-[35rem] bg-[url("/careerbg.jpg")] mt-5 bg-cover bg-center flex items-center justify-center'>
+    <div className='relative h-[38rem] bg-[url("/careerbg.jpg")] mt-5 bg-cover bg-center flex items-center justify-center'>
      
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40"></div>
 
      
-      <div className="relative z-10 text-center px-6 max-w-4xl pt-15">
+      <div className="relative z-10 text-center px-6 max-w-[470px] pt-15 px-2">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-[30px] md:text-[45px] font-extrabold text-white leading-tight drop-shadow-lg"
+          className="text-[25px] md:text-[40px] font-extrabold text-white leading-tight drop-shadow-lg"
         >
-          We bring a wealth of experience from diverse backgrounds
+          Diverse minds. Unified results.
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
-          className="mt-6 text-lg md:text-xl text-gray-200 leading-relaxed max-w-2xl mx-auto"
+          className="mt-6  text-gray-200 leading-base max-w-2xl mx-auto"
         >
           Our philosophy is simple: hire great people, give them the resources 
           and support they need, and watch them do their best work.

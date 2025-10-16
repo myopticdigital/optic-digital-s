@@ -53,7 +53,7 @@ const ProfessionsSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-[24px] md:text-[32px] capitalize font-bold text-gray-900"
+          className="text-[22px] md:text-[30px] capitalize font-bold text-gray-900"
         >
           Our Pillars of Strength
         </motion.h2>

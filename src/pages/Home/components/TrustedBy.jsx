@@ -17,8 +17,8 @@ const TrustedBy = () => {
     "/logo7.png",
   ];
   return (
-    <div className="max-w-[1200px] overflow-hidden m-auto flex flex-col gap-3 py-7">
-      <h1 className="font-neue text-center font-bold text-[24px] md:text-[32px] mb-10">
+    <div className="max-w-[1200px] overflow-hidden m-auto flex flex-col gap-3  pb-24 px-5">
+      <h1 className="font-neue text-center font-bold text-[22px] md:text-[30px] mb-10">
         Trusted by
       </h1>
       {/* Slider for company logos */}
@@ -29,11 +29,11 @@ const TrustedBy = () => {
           loop={true}
           autoplay={{ delay: 1500, disableOnInteraction: false }}
           breakpoints={{
-            320: { slidesPerView: 2 },
-            640: { slidesPerView: 3 },
-            1024: { slidesPerView: 5 },
+            320: { slidesPerView: 3 },
+            640: { slidesPerView: 4 },
+            1024: { slidesPerView: 6 },
           }}
-          className="flex items-center"
+          className="flex items-center justify-between"
         >
           {images.map((logo, i) => (
             <SwiperSlide key={i}>

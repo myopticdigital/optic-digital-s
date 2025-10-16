@@ -4,10 +4,10 @@ import BlogCard from "../../../components/ui/BlogCard";
 const Read = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-3 py-7 px-3">
-      <h1 className="font-neue font-bold text-[24px] md:text-[32px] leading-[44px] capitalize text-center">
+      <h1 className="font-neue font-bold text-[22px] md:text-[30px] leading-[44px] capitalize text-center">
         Read Insights That Drive Growth
       </h1>
-      <p className="leading-[24px] text-center max-w-2xl">
+      <p className="leading-base text-center max-w-2xl">
         Explore expert perspectives, practical strategies, and the latest trends
         in marketing to keep your brand ahead of the curve
       </p>

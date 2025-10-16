@@ -26,7 +26,7 @@ const HeroSection = () => {
     },
   };
   return (
-    <div className="relative bg-[url('./assets/homeherobg.jpg')] flex flex-col items-center gap-4 justify-center bg-cover bg-no-repeat w-full h-[600px] bg-center">
+    <div className="relative bg-[url('./assets/homeherobg.jpg')] flex flex-col items-center gap-4 justify-center bg-cover bg-no-repeat w-full h-[100vh] bg-center">
 
       <motion.div
         className="flex flex-col items-center gap-4 z-10"
@@ -34,7 +34,7 @@ const HeroSection = () => {
         initial="hidden"
         animate="visible"
       >
-      <motion.h1 className="font-neue font-bold text-white text-center max-w-3xl text-[30px] md:text-[45px] z-50" variants={itemVariants}>
+      <motion.h1 className="font-neue font-bold text-white text-center max-w-3xl text-[30px] md:text-[45px] z-50 px-[10px]" variants={itemVariants}>
         We Grow Brands That People Can’t Ignore
       </motion.h1>
       
@@ -56,7 +56,7 @@ const HeroSection = () => {
 
       </motion.div>
 
-      <div className="absolute inset-0 bg-black/60 -z-0"></div>
+      <div className="absolute inset-0 bg-black/50 -z-0"></div>
     </div>
   );
 };

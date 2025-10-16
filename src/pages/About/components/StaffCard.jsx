@@ -9,14 +9,14 @@ const StaffCard = ({ image, office, name }) => {
         alt="Abraham Segun"
         width={500}
         height={500}
-        className="h-full w-2xl hover:scale-110 transition-all ease-in-out duration-300 object-cover object-top"
+        className="h-[500px] w-2xl hover:scale-110 transition-all ease-in-out duration-300 object-cover object-top"
       />
       <div className="flex items-center justify-between absolute p-3 bottom-4 right-3 left-3 bg-white rounded-xl">
         <div className="flex items-start gap-2 flex-col">
-          <h3 className="capitalize font-neue font-medium text-[24px] leading-[32px]">
+          <h3 className="capitalize font-neue font-medium text-[16px] leading-[32px]">
             {name}
           </h3>
-          <p className="leading-[24px]">{office}</p>
+          <p className="leading-base">{office}</p>
         </div>
 
         <LinkedInB />

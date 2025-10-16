@@ -8,14 +8,14 @@ const Header = ({ setShowNav }) => {
 
   return (
     <div className='flex items-center justify-between md:px-[95px]  z-20 px-10 py-[15px] bg-white'>
-      <a href="/"><img src="/logo.svg" alt="logo" /></a>
+      <a href="/"><img src="/logo.svg" alt="logo" className='w-35 h-full'  /></a>
 
       <nav className='md:flex items-center hidden gap-7'>
-        <a href="/aboutus" className={`text-[16px] ${ pathName === '/aboutus' ? 'text-primaryPurple' : 'text-black' }`}>About us</a>
-        <a href="/services" className={`text-[16px] ${ pathName === '/services' ? 'text-primaryPurple font-medium' : 'text-black' }`}>Our Services</a>
-        <a href="/blogs" className={`text-[16px] ${ pathName.includes('blogs') ? 'text-primaryPurple' : 'text-black' }`}>Blog</a>
-        <a href="/careers" className={`text-[16px] ${ pathName === '/careers' ? 'text-primaryPurple' : 'text-black' }`}>Careers</a>
-        <a href="contact" className={`text-[16px] ${ pathName === '/contact' ? 'text-primaryPurple' : 'text-black' }`}>Contact us</a>
+        <a href="/aboutus" className={`text-[14px] ${ pathName === '/aboutus' ? 'text-primaryPurple' : 'text-black' }`}>About us</a>
+        <a href="/services" className={`text-[14px] ${ pathName === '/services' ? 'text-primaryPurple font-medium' : 'text-black' }`}>Our Services</a>
+        <a href="/blogs" className={`text-[14px] ${ pathName.includes('blogs') ? 'text-primaryPurple' : 'text-black' }`}>Blog</a>
+        <a href="/careers" className={`text-[14px] ${ pathName === '/careers' ? 'text-primaryPurple' : 'text-black' }`}>Careers</a>
+        <a href="contact" className={`text-[14px] ${ pathName === '/contact' ? 'text-primaryPurple' : 'text-black' }`}>Contact us</a>
       </nav>
 
     <div className='flex items-center gap-3'>
