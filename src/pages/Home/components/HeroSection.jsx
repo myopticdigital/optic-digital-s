@@ -26,7 +26,7 @@ const HeroSection = () => {
     },
   };
   return (
-    <div className="relative bg-[url('homeherobg.jpg')] flex flex-col items-center gap-4 justify-center bg-cover bg-no-repeat w-full h-[100vh] bg-center">
+    <div className="relative bg-[url('/homeherobg.jpg')] flex flex-col items-center gap-4 justify-center bg-cover bg-no-repeat w-full h-[100vh] bg-center">
 
       <motion.div
         className="flex flex-col items-center gap-4 z-10"

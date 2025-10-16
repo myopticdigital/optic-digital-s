@@ -3,7 +3,7 @@ import React from "react";
 
 const HeroSection = ({ searchValue, setSearchValue }) => {
   return (
-    <div className="bg-[url('ab.png')] relative bg-cover bg-blend-lighten bg-no-repeat mt-5 items-center  text-white flex flex-col justify-center h-[38rem]">
+    <div className="bg-[url('/ab.png')] relative bg-cover bg-blend-lighten bg-no-repeat mt-5 items-center  text-white flex flex-col justify-center h-[38rem]">
       <div className="flex flex-col z-10 gap-4 items-center justify-center max-w-md md:max-w-[470px] px-2">
         <h4 className="bg-[#5206C066] p-2 px-4  rounded-full text-[16px] text-center">
           Our blog
