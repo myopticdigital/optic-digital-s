@@ -57,6 +57,15 @@ const Footer = () => {
             <li className="hover:text-white transition-colors">
               <a href="/careers">Careers</a>
             </li>
+            <li className="hover:text-white transition-colors">
+              <a
+                href="https://drive.google.com/drive/folders/1z9t1AipbmTa2T522B_8Ymm1o8TK5UkHC"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Resources Library
+              </a>
+            </li>
           </ul>
         </div>
 
