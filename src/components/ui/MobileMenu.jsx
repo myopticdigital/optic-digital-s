@@ -7,7 +7,7 @@ const MobileMenu = ({ isOpen, setIsOpen }) => {
     const pathName = location.pathname
     const navRef = useRef(null)
   return (
-    <div className={`fixed transition duration-300 ease-in md:hidden top-0 z-50 bg-white/65 ${
+    <div className={`fixed transition duration-300 ease-in min-[800px]:hidden top-0 z-50 bg-white/65 ${
         isOpen ? 'translate-x-0' : '-translate-x-full '
     }  backdrop-blur-xl w-full h-full`} ref={navRef}>
         <div></div>

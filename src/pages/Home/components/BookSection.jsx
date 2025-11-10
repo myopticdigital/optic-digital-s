@@ -18,10 +18,10 @@ const BookSection = () => {
         </button>
       </div>
 
-      <div className="relative flex items-center justify-center">
+      <div className="w-full relative flex items-center justify-center">
         <motion.img
           src="/main.png"
-          className="w-36 absolute -left-2 top-28 z-10"
+          className="w-36 absolute -left-2 top-28 z-10 object-contain"
           alt=""
           initial={{ opacity: 0, x: -50, rotate: -10 }}
           whileInView={{ opacity: 1, x: 0, rotate: 0 }}
@@ -53,7 +53,7 @@ const BookSection = () => {
         >
           <motion.img
             src="/officer.png"
-            className="h-[35rem] z-20"
+            className="h-[35rem] z-20 object-cover "
             initial={{ scale: 1.1 }}
             whileInView={{ scale: 1 }}
             viewport={{ once: true }}

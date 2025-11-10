@@ -63,7 +63,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Resources Library
+                Books
               </a>
             </li>
           </ul>
