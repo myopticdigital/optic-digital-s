@@ -6,7 +6,7 @@ const TestimonialCard = ({
   logo
 }) => {
   return (
-    <div className='flex rounded-2xl items-start justify-between w-full max-w-96 min-h-[320px] md:min-h-[380px] gap-3 md:gap-4 p-5 md:p-7 flex-col bg-white text-black shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2'>
+    <div className='flex rounded-2xl items-start justify-between w-full max-w-full min-h-[200px] md:min-h-[250px] gap-3 md:gap-4 p-5 md:p-7 flex-col bg-white text-black shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2'>
       {/* Quote Icon */}
       <div className='w-8 h-8 md:w-12 md:h-12 flex-shrink-0'>
         <img 
@@ -28,7 +28,7 @@ const TestimonialCard = ({
           <img 
             src={logo} 
             alt={`${userName} logo`}
-            className='w-full h-full object-scale-down '
+            className='w-full h-full object-scale-down'
           />
         </div>
         <p className='font-neue font-medium text-xs md:text-sm leading-tight text-gray-900'>
