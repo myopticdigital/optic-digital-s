@@ -18,7 +18,7 @@ const StaffCard = ({
     imageScale === 'scale-115' ? 'scale-100 min-[700px]:scale-[1.15]' :
     imageScale === 'scale-125' ? 'scale-100 min-[700px]:scale-125' :
     imageScale === 'scale-[1.35]' ? 'scale-100 min-[700px]:scale-[1.35]' :
-    imageScale === 'scale-150' ? 'scale-120 min-[700px]:scale-150' :
+    imageScale === 'scale-170' ? 'scale-120 min-[700px]:scale-170' :
     'scale-100 min-[700px]:scale-100'; // default to 100
 
   return (

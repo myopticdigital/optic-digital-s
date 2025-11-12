@@ -47,7 +47,7 @@ const Left = () => {
             rel="noopener noreferrer"
             className="text-lg"
           >
-            43 Powell House, Enfield, London
+            45 Carterhatch Road, Enfield.
           </a>
         </div>
       </div>

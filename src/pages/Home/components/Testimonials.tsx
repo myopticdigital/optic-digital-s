@@ -16,7 +16,7 @@ const Testimonials = () => {
     {
       testimony:
         "Optic Digital transformed our online presence, significantly boosting bookings. Their strategic approach made them an invaluable partner",
-      userName: "Wakanov",
+      userName: "Wakanow",
       logo: "/Wakanov.png",
     },
     {

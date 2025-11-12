@@ -7,14 +7,14 @@ const Workers = () => {
       image: "/worker1.jpg",
       name: "Abraham Segun",
       office: "Chief executive officer(CEO)",
-      imageScale: "scale-150",        // Custom scale for this image
-      imagePosition: "object-[center_-35%]", // Custom position
+      imageScale: "scale-170",        // Custom scale for this image
+      imagePosition: " md:object-[center_-35%] lg:object-[center_-75%]"// Custom position
     },
     {
       image: "/worker2.jpg",
       name: "Obafemi Abel",
       office: "Chief operations officer(COO)",
-      imageScale: "scale-115",        // Different scale
+      imageScale: "scale-105",        // Different scale
       imagePosition: "object-top",    // Different position
     },
     {
