@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 const Form = () => {
   const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
 
   const validate = (formData) => {
     let newErrors = {};
@@ -27,7 +29,7 @@ const Form = () => {
     return newErrors;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const formData = {
@@ -42,20 +44,55 @@ const Form = () => {
 
     if (Object.keys(formErrors).length > 0) {
       setErrors(formErrors);
-    } else {
-      setErrors({});
-      e.target.submit(); 
+      return;
+    }
+
+    setErrors({});
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitStatus("success");
+        e.target.reset();
+      } else {
+        setSubmitStatus("error");
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
   return (
     <form
       onSubmit={handleSubmit}
-      action="https://formspree.io/f/mnngvraa"
-      method="POST"
       className="flex-1 flex items-start py-7 px-4 gap-6 flex-col text-black"
     >
-      
+      {submitStatus === "success" && (
+        <div className="w-full p-4 bg-green-100 text-green-700 rounded-lg">
+          Message sent successfully! We'll get back to you soon.
+        </div>
+      )}
+
+      {submitStatus === "error" && (
+        <div className="w-full p-4 bg-red-100 text-red-700 rounded-lg">
+          Failed to send message. Please try again.
+        </div>
+      )}
+
       <div className="flex items-start gap-8 w-full">
         <div className="flex-1 flex-col flex items-start">
           <label htmlFor="fname" className="text-sm text-gray-500 mb-2">
@@ -84,7 +121,6 @@ const Form = () => {
           />
         </div>
       </div>
-
 
       <div className="flex items-start gap-8 w-full">
         <div className="flex-1 gap-5 md:gap-0 flex-col flex items-start">
@@ -116,7 +152,6 @@ const Form = () => {
         </div>
       </div>
 
-      
       <div className="flex flex-col w-full">
         <label htmlFor="message" className="text-sm text-gray-500 mb-2">
           Message
@@ -130,12 +165,12 @@ const Form = () => {
         {errors.message && <p className="text-red-500 text-xs">{errors.message}</p>}
       </div>
 
-      
       <button
         type="submit"
-        className="bg-primaryPurple w-32 cursor-pointer text-white px-5 py-3 rounded-xl hover:bg-purple-700"
+        disabled={isSubmitting}
+        className="bg-primaryPurple w-32 cursor-pointer text-white px-5 py-3 rounded-xl hover:bg-purple-700 disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        Submit
+        {isSubmitting ? "Sending..." : "Submit"}
       </button>
     </form>
   );
