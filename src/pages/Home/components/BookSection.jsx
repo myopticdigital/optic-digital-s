@@ -14,9 +14,9 @@ const BookSection = () => {
           your brand further
         </p>
 
-        <button className="cursor-pointer hover:opacity-75 transition duration-200 font-neue bg-primaryPurple px-6 py-3 text-white rounded-4xl font-medium">
+        <a href="/contact" className="cursor-pointer hover:opacity-75 transition duration-200 font-neue bg-primaryPurple px-6 py-3 text-white rounded-4xl font-medium">
           Book a call
-        </button>
+        </a>
       </div>
 
       <div className="w-full relative flex items-center justify-center">

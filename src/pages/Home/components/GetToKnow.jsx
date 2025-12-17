@@ -45,9 +45,9 @@ const GetToKnow = () => {
             </p>
           </div>
 
-          <button className="cursor-pointer font-neue bg-white px-6 py-3 text-primaryPurple rounded-4xl font-medium">
+          <a href="/contact" className="cursor-pointer font-neue bg-white px-6 py-3 text-primaryPurple rounded-4xl font-medium">
             Book a call
-          </button>
+          </a>
         </div>
       </div>
     </section>

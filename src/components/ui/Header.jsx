@@ -66,9 +66,9 @@ const Header = ({ setShowNav }) => {
       </nav>
 
       <div className="flex items-center gap-3">
-        <button className="cursor-pointer hover:opacity-75 transition-all duration-300 font-neue bg-primaryPurple px-6 py-3 text-white rounded-4xl font-medium">
+        <a href="/contact" className="cursor-pointer hover:opacity-75 transition-all duration-300 font-neue bg-primaryPurple px-6 py-3 text-white rounded-4xl font-medium">
           Book a call
-        </button>
+        </a>
 
         <div className="min-[800px]:hidden" onClick={() => setShowNav(true)}>
           <AlignCenter />

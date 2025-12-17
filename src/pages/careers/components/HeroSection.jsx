@@ -36,9 +36,9 @@ const HeroSection = () => {
           transition={{ duration: 1, delay: 0.6 }}
           className="mt-8 flex justify-center"
         >
-          <button className="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300">
+          <a href="/contact" className="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300">
             Join Our Team <ArrowRight size={20} />
-          </button>
+          </a>
         </motion.div>
       </div>
 

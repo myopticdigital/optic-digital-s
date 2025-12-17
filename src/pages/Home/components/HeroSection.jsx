@@ -46,12 +46,12 @@ const HeroSection = () => {
        
       </p>
       <motion.div className="flex items-center gap-4 z-10" variants={itemVariants}>
-        <button className="cursor-pointer font-neue bg-primaryPurple px-6 py-3 hover:opacity-75 transition duration-300 text-white rounded-4xl font-medium">
+        <a href="/contact" className="cursor-pointer font-neue bg-primaryPurple px-6 py-3 hover:opacity-75 transition duration-300 text-white rounded-4xl font-medium">
           Book a call
-        </button>
-        <button className="cursor-pointer font-neue border hover:bg-secondaryColor/80 transition duration-300 border-secondaryColor px-6 py-3 text-white rounded-4xl font-medium">
-          <a href="/services">Explore our services</a>
-        </button>
+        </a>
+        <a href="/services" className="cursor-pointer font-neue border hover:bg-secondaryColor/80 transition duration-300 border-secondaryColor px-6 py-3 text-white rounded-4xl font-medium">
+          Explore our services
+        </a>
       </motion.div>
 
       </motion.div>
