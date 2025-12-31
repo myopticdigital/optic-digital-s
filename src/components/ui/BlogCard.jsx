@@ -11,16 +11,20 @@ const BlogCard = ({ image, title, author, authorImage, date, id }) => {
     navigate(`/blogs/${id}`)
   }
   return (
-    <div onClick={handleClick} className="flex flex-col items-start gap-3 p-3 border max-w-[397px] max-h-[444px] overflow-hidden rounded-2xl border-[#DADADA]">
-      
+    // BlogCard.jsx
+    <div
+      onClick={handleClick}
+      className="cursor-pointer flex flex-col items-start gap-3 p-3 border rounded-2xl border-[#DADADA] hover:shadow-lg transition-shadow duration-300"
+    >
+
       <img src={image} className="rounded-xl w-full h-48 object-cover" alt={title} />
 
-      
+
       <h3 className="font-semibold text-[16px] leading-base max-w-[340px] line-clamp-2">
         {title}
       </h3>
 
-      
+
       <div className="flex items-center w-full justify-between">
         <div className="flex items-center gap-2">
           <img src={authorImage} className="w-10 h-10 rounded-full object-cover" alt={author} />
